@@ -1,0 +1,113 @@
+#max-menu-page {
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+		> li {
+			float: left;
+			position: relative;
+			display: inline-block;
+			padding: 10px 6px;
+			&:hover {
+				background-color: $red;
+				> a {
+					// background-color: $red;
+				}
+			}
+			> a {
+				position: relative;
+				font-size: $font-medium;
+				color: $white;
+				font-family: $font-utm;
+				text-transform: uppercase;
+				padding: 10px 0;
+				color: $white;
+				@media #{$tabletUp} {
+                    font-size: $font-nomal + 2;
+                }
+			}
+		}
+	}
+}
+
+#nav-menu-page {
+	button {
+		float: right;
+		padding: 0;
+		background: none;
+		color: $white;
+		font-size: $font-medium + 8;
+		padding: $space-small 0 $space-small 0;
+		display: inline-block;
+		z-index: 700;
+		opacity: 1;
+		visibility: visible;
+		border: 0;
+		box-shadow: none;
+		@include transition(all 0.4s ease-in);
+		span {
+			border-bottom: 2px solid $white;
+			margin-bottom: $space-small;
+			display: block;
+			width: $space-medium * 2;
+			&:nth-child(3) {
+				margin-bottom: 0;
+			}
+		}
+		&.close {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+.close-m-extend {
+	display: inline-block;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	// right: 0;
+	top: $space-small;
+	@include transition(all 0.4s ease-out);
+	button {
+		float: right;
+		padding: 0;
+		background: none;
+		color: $white;
+		font-size: $font-medium + 8;
+		padding: $space-small 0 $space-small 0;
+		display: inline-block;
+		z-index: 700;
+		border: 0;
+		box-shadow: none;
+		height: 88px;
+		span {
+			border-bottom: 2px solid $white;
+			margin-bottom: $space-small;
+			display: block;
+			width: $space-medium * 2;
+			@include transition(all 5s ease-out);
+			&:nth-child(1) {
+				-webkit-transform: rotate(-45deg);
+			    -moz-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			    -o-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			    margin-top: -21px;
+			}
+
+			&:nth-child(2) {
+				-webkit-transform: rotate(45deg);
+			    -moz-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			    margin-top: -22px;
+			    @include transition(all 5s ease-out);
+			}
+
+		}
+	}
+	&.open {
+		opacity: 1;
+		visibility: visible;
+	}
+}

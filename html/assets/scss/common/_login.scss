@@ -1,0 +1,106 @@
+#register {
+	#login {
+		position: relative;
+		padding-right: $space-smaller - 7;
+		&:before {
+			content: "";
+			position: absolute;
+			right: $space-smaller - 2;
+			top: $space-smaller + 3;
+			height: $space-small;
+			width: 1px;
+			border-right: 1px solid #dbdbdb;
+		}
+		.modal-dialog {
+			background-color: #2e2e2e;
+			.modal-header {
+				padding: $space-smaller;
+			}
+			.modal-title {
+				font-size: $font-medium;
+				color: #2e2e2e;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: $font-utm;
+			}
+			.modal-body {
+				.row {
+					> .col-md-6 {
+						border-right: 1px solid #ddd;
+					}
+				}
+				
+				form {
+					margin-bottom: $space-smaller + 5;
+					text-align: center;
+				}
+				.form-group {
+					label {
+						font-size: $font-nomal;
+						margin-bottom: $space-smaller - 2;
+						text-align: left;
+						float: left;
+					}
+					input {
+						border-radius: 0;
+						box-shadow: none;
+					}
+				}
+				button {
+					background-color: $red;
+					box-shadow: none;
+					border-radius: 0;
+					text-shadow: none;
+					color: $white;
+					border: 1px solid $red;
+					&:hover {
+						background-color: $white;
+						color: $red;
+					}
+				}
+			}
+			.login-social {
+				display: inline-block;
+				width: 100%;
+				margin-bottom: $space-smaller + 5;
+				> div {
+					width: 100%;
+					margin: 0;
+					margin-bottom: $space-smaller;
+					background-color: $red;
+					padding: $space-smaller;
+					text-align: center;
+					&.facebook {
+						background-color: #4a75ce;
+						margin-left: 0;
+						&:hover {
+							background-color: #245aca;
+						}
+					}
+					&:last-child {
+						margin-right: 0;
+						&:hover {
+							background-color: #f32a2a;
+						}
+					}
+					> a {
+						font-size: $font-nomal;
+						color: $white;
+						display: block;
+					}
+				}
+			}
+			.register {
+				> a {
+					text-decoration: underline;
+					color: #4a75ce;
+				}
+			}
+		}
+		.icon-login {
+			background: none;
+			border: 0;
+			box-shadow: none;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@include font-face($font-lato, '#{$font-path}/Lato-Regular', $weight: $font-weight-regular);
+@include font-face($font-lato, '#{$font-path}/Lato-Medium', $weight: $font-weight-medium);
+@include font-face($font-lato, '#{$font-path}/Lato-Bold', $weight: $font-weight-bold);
+@include font-face($font-lato, '#{$font-path}/Lato-Light', $weight: $font-weight-light);
+@include font-face($font-lato, '#{$font-path}/Lato-Semibold', $weight: $font-weight-semibold);
+
+@include font-face($font-noto, '#{$font-path}/NotoSerif', $weight: $font-weight-regular);
+
+@include font-face($font-utm-talling, '#{$font-path}/UTMTalling', $weight: $font-weight-regular);
+
+@include font-face($font-utm-coloss, '#{$font-path}/UTMColossalis', $weight: $font-weight-regular);
+
+@include font-face($font-roboto, '#{$font-path}/Roboto-Regular', $weight: $font-weight-regular);
+
+@include font-face($font-utm, '#{$font-path}/UTMAlterGothic');
+@include font-face($font-oswald, '#{$font-path}/VNF-Oswald');
+@include font-face($font-oswaldvnf, '#{$font-path}/OswaldVNF');
+
+

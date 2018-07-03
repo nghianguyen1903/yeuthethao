@@ -1,0 +1,48 @@
+//@import "compass";
+@import 'bourbon/bourbon';
+@import "variables";
+// @import "utilities";
+@import 'fontface';
+@import "mixins";
+
+@import './common/common';
+@import './common/header';
+@import './common/footer';
+@import './common/menu';
+@import './common/login';
+
+@import './pages/home';
+@import './pages/sidebar';
+
+
+
+
+body {
+	min-width: 100%;
+	font-family: $font-lato;
+	font-weight: $font-weight-regular;
+	line-height: 1.2;
+}
+
+*:focus {
+	outline: none !important;
+}
+
+a, a:hover, a:visited, a:active, a:link{
+	text-decoration: none;
+}
+ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, p, a span, label, button {
+	font-weight: $font-weight-regular;
+	margin: 0;
+}
+img{
+	border: none;
+	max-width: 100%;
+}
+
+/* ---------------- Grid ---------------- */
